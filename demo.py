@@ -2,11 +2,7 @@ from text.logger import logging
 from text.exception import CustomException
 import sys
 
-logging.info("Welcome to our project!")
+from text.configuration.gcloud_syncer import GCloudSync
 
-try:
-
-    a = 7 / "0"
-
-except Exception as e:
-    raise CustomException(e, sys) from e
+obj = GCloudSync()
+obj.sync_folder_from_gcloud("text-speech-live-2024", "dataset.zip", "dataset.zip")

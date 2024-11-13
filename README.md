@@ -1,5 +1,14 @@
 # End-to-End NLP Model Implementation
 
+## Project Workflows
+
+- constants
+- config_entity
+- artifact_entity
+- components
+- pipeline
+- app.py
+
 ## Hot to run
 
 ''' bash
@@ -28,5 +37,14 @@ conda activate -n text
 ''' bash
 
 python install -r requirements.txt
+
+'''
+
+#Gcloud CLI
+htts://dl/google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
+
+''' bash
+
+gcloud init
 
 '''
